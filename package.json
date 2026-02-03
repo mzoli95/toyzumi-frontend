@@ -10,12 +10,23 @@
     "serve:ssr:toyzumi-frontend": "node dist/toyzumi-frontend/server/server.mjs"
   },
   "prettier": {
-    "printWidth": 100,
     "singleQuote": true,
+    "printWidth": 100,
+    "semi": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "endOfLine": "auto",
+    "arrowParens": "avoid",
+    "htmlWhitespaceSensitivity": "css",
+    "embeddedLanguageFormatting": "auto",
+    "bracketSameLine": false,
+    "singleAttributePerLine": false,
     "overrides": [
       {
-        "files": "*.html",
+        "files": "**/*.html",
         "options": {
+          "printWidth": 60,
           "parser": "angular"
         }
       }
@@ -40,13 +51,20 @@
     "@angular/build": "^21.1.2",
     "@angular/cli": "^21.1.2",
     "@angular/compiler-cli": "^21.1.0",
+    "@eslint/css": "^0.14.1",
+    "@eslint/js": "^9.39.2",
+    "@eslint/markdown": "^7.5.1",
     "@tailwindcss/postcss": "^4.1.12",
     "@types/express": "^5.0.1",
     "@types/node": "^20.17.19",
+    "eslint": "^9.39.2",
+    "globals": "^17.3.0",
     "jsdom": "^27.1.0",
     "postcss": "^8.5.3",
+    "prettier": "^3.8.1",
     "tailwindcss": "^4.1.12",
     "typescript": "~5.9.2",
+    "typescript-eslint": "^8.54.0",
     "vitest": "^4.0.8"
   }
 }
